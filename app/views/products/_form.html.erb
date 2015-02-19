@@ -1,0 +1,29 @@
+<%= form_for @product do |f| %>
+
+	<% if @product.errors.any? %>
+		<strong>Hay campos sin llenar. Por favor verifique</strong>
+	<% end %>
+
+	<p>
+		<%= f.label :Nombre %><br>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :Descripción %><br>
+		<%= f.text_field :description %>
+	</p>
+	<p>
+		<%= f.label :Precio %><br>
+		<%= f.number_field :price %>
+	</p>
+
+	<p>
+		<%= f.label :"¿Está disponible?" %>
+		<%= f.check_box :published %>
+	</p>
+
+	<p>
+		<%= f.submit "Guardar"%>
+	</p>
+
+<% end %>

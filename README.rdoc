@@ -1,28 +1,25 @@
-== README
+Mi primer modelo
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Vamos a crear una aplicación para administrar productos utilizando el scaffold de Rails.
 
-Things you may want to cover:
+Instrucciones
 
-* Ruby version
+1. Crea una aplicación llamada productos
+2. Utilizando el generador de Rails, crea el modelo Product con los siguientes atributos (identifica el tipo de datos de cada uno):
 
-* System dependencies
+name
+description
+price
+published - ¿El producto está publicado?
+Nota: Recuerda que el generador de Rails crea automáticamente los atributos id, created_at y updated_at.
 
-* Configuration
+3. Crear un controlador para administrar los productos y las vistas correspondientes. Los usuarios deben poder:
 
-* Database creation
+Listar los productos.
+Crear un producto.
+Editar un producto.
+Eliminar un producto.
+No implementaremos ningún tipo de seguridad. Cualquier persona puede listar, crear, editar, y eliminar productos.
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+4. Configura la ruta principal para que muestre la lista de productos.
+5. Publica la aplicación en tu repositorio de Github.
